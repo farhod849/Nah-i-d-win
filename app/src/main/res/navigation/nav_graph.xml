@@ -15,19 +15,13 @@
             app:destination="@id/fragmentRegister" />
         <action
             android:id="@+id/action_fragmentLogin_to_fragmentMainMenu"
-            app:destination="@id/fragmentMainMenu"
-            app:popUpTo="@id/fragmentLogin"
-            app:popUpToInclusive="true" />
+            app:destination="@id/fragmentMainMenu" />
     </fragment>
     <fragment
         android:id="@+id/fragmentRegister"
         android:name="com.example.bus_app_e.fragments.FragmentRegister"
         android:label="fragment__reg"
-        tools:layout="@layout/fragment__reg" >
-        <action
-            android:id="@+id/action_fragmentRegister_to_fragmentLogin"
-            app:destination="@id/fragmentLogin" />
-    </fragment>
+        tools:layout="@layout/fragment__reg" />
     <fragment
         android:id="@+id/fragmentMainMenu"
         android:name="com.example.bus_app_e.fragments.FragmentMainMenu"
@@ -39,14 +33,18 @@
         <action
             android:id="@+id/action_fragmentMainMenu_to_fragmentLogin"
             app:destination="@id/fragmentLogin" />
+        <action
+            android:id="@+id/action_fragmentMainMenu_to_fragmentCreateTicket"
+            app:destination="@id/fragmentCreateTicket" />
     </fragment>
     <fragment
         android:id="@+id/fragmentProfile"
         android:name="com.example.bus_app_e.fragments.FragmentProfile"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
-        <action
-            android:id="@+id/action_fragmentProfile_to_fragmentMainMenu"
-            app:destination="@id/fragmentMainMenu" />
-    </fragment>
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/fragmentCreateTicket"
+        android:name="com.example.bus_app_e.fragments.FragmentCreateTicket"
+        android:label="fragment_create_ticket"
+        tools:layout="@layout/fragment_create_ticket" />
 </navigation>

@@ -43,7 +43,7 @@ class FragmentRegister : Fragment() {
                             };
                         };
                             Toast.makeText(context, "Регистрация прошла успешно", Toast.LENGTH_SHORT).show();
-                            it.findNavController().navigate(R.id.action_fragmentRegister_to_fragmentLogin)
+                            it.findNavController().popBackStack();
                         }
                     }
             }

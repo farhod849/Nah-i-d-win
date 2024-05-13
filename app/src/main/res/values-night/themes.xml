@@ -2,6 +2,6 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Bus_App_e" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="txtColor"> @color/white</item>
-        <item name="bgcolor"> @color/gray</item>
+        <item name="bgcolor"> @color/white</item>
     </style>
 </resources>
