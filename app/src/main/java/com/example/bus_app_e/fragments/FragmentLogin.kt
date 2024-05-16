@@ -25,7 +25,6 @@ class FragmentLogin : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         binding.QuitBtn.setOnClickListener{
             System.exit(0);
         }
@@ -33,7 +32,6 @@ class FragmentLogin : Fragment() {
             if(binding.TextEmail.getText().toString().isEmpty() || binding.TextPassword.getText().toString().isEmpty()){
                 Toast.makeText(context, "Поля не могут быть пустыми!", Toast.LENGTH_SHORT).show();
             }else{
-
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(binding.TextEmail.getText().toString(), binding.TextPassword.getText().toString())
                     .addOnCompleteListener { task ->
                         if (task.isSuccessful) {
@@ -46,7 +44,13 @@ class FragmentLogin : Fragment() {
                         }
                     };
             }
+
         }
+
+
+
+
+
         binding.GoToRegActivity.setOnClickListener{
             it.findNavController().navigate(R.id.action_fragmentLogin_to_fragmentRegister)
         }

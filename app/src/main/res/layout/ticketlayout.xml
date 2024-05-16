@@ -14,9 +14,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="138dp" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <TextView
         app:layout_constraintStart_toStartOf="parent"
@@ -26,9 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="кекус"
-        android:textSize="34dp"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="137dp" />
+        android:textSize="34dp" />
 
     <TextView
         app:layout_constraintStart_toEndOf="@id/NameTicket"
@@ -37,9 +33,7 @@
         android:id="@+id/PriceTicket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="15000"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="38dp" />
+        android:text="15000"/>
 
     <TextView
         app:layout_constraintStart_toEndOf="@id/PriceTicket"
@@ -48,7 +42,5 @@
         android:id="@+id/DateTicket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="кекус"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="55dp" />
+        android:text="кекус"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
