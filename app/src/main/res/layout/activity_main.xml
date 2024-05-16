@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity">
+    tools:context=".activities.MainActivity"
+    android:background="@drawable/background_app">
 
     <androidx.fragment.app.FragmentContainerView
+
         android:id="@+id/ContainerFrag"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

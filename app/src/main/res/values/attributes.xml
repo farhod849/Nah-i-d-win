@@ -2,4 +2,5 @@
 <resources>
     <attr name = "txtColor" format="color"/>
     <attr name = "bgcolor" format="color"/>
+    <attr name = "btncolor" format="color"/>
 </resources>

@@ -15,6 +15,15 @@
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:background="@color/black">
+
+        <ImageButton
+            android:id="@+id/LogOutBTN"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logout"
+            android:scaleType="fitCenter"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -29,27 +38,33 @@
         />
     <LinearLayout
         android:id="@+id/linear1"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/black"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        android:weightSum="2"
+        >
 
-        <Button
+        <ImageButton
             android:id="@+id/TicketsBTN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Билеты" />
+            android:scaleType="fitCenter"
+            android:src="@drawable/ticketlist"
+           />
 
-        <Button
+        <ImageButton
             android:id="@+id/ProfileBTN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Профиль"/>
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile"
+            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

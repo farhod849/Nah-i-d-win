@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.FragmentLogin">
+    tools:context=".fragments.FragmentLogin"
+    android:background="@drawable/background_app"
+    >
 
     <Button
 
@@ -17,7 +19,9 @@
         android:text="Выйти"/>
 
     <EditText
-
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,6 +40,9 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/TextEmail"
         android:id="@+id/TextPassword"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"

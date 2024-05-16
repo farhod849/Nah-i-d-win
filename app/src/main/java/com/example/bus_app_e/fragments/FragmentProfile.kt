@@ -5,12 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.findNavController
 import com.example.bus_app_e.R
 import com.example.bus_app_e.databinding.FragmentMainMenuBinding
 import com.example.bus_app_e.databinding.FragmentProfileBinding
 import com.example.bus_app_e.misc.TicketAdapter
 import com.example.bus_app_e.misc.TicketViewModel
+import com.google.firebase.auth.FirebaseAuth
 
 
 class FragmentProfile : Fragment() {
@@ -30,7 +33,14 @@ class FragmentProfile : Fragment() {
         ticketviewmodel.data.observe(viewLifecycleOwner, {
             adapter.submitList(it.filter {it.BuyedByMe})
         })
-
+        binding.TicketsBTN.setOnClickListener {
+            it.findNavController().navigate(R.id.action_fragmentProfile_to_fragmentMainMenu)
+        }
+        binding.LogOutBTN.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            Toast.makeText(context,"Вы успешно вышли из аккаунта", Toast.LENGTH_SHORT).show();
+            it.findNavController().navigate(R.id.action_fragmentProfile_to_fragmentLogin)
+        }
     }
 }
 

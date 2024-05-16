@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="225.000000dp"
+    android:height="225.000000dp"
+    android:viewportWidth="225.000000"
+    android:viewportHeight="225.000000">
+
+    <group
+        android:translateY="225.000000"
+        android:scaleX="0.100000"
+        android:scaleY="-0.100000">
+        <path
+            android:fillColor="?btncolor"
+            android:strokeWidth="1"
+            android:pathData="M345 1961 c-42 -18 -59 -50 -63 -120 -4 -74 12 -122 47 -141 11 -5 54 -10 96 -10 71 0 79 2 106 29 27 27 29 35 29 106 0 87 -8 108 -50 130 -31 16 -131 19 -165 6z" />
+        <path
+            android:fillColor="?btncolor"
+            android:strokeWidth="1"
+            android:pathData="M804 1956 c-42 -19 -57 -60 -52 -147 3 -63 7 -74 31 -95 l28 -24 545 0 c355 0 552 4 565 10 35 19 51 67 47 142 -3 58 -8 72 -31 96 l-27 27 -538 2 c-434 2 -543 0 -568 -11z" />
+        <path
+            android:fillColor="?btncolor"
+            android:strokeWidth="1"
+            android:pathData="M324 1295 c-33 -23 -47 -68 -42 -140 3 -55 8 -70 31 -92 23 -23 37 -28 95 -31 75 -4 123 12 142 47 5 11 10 54 10 96 0 71 -2 79 -29 106 -28 27 -35 29 -108 29 -53 0 -85 -5 -99 -15z" />
+        <path
+            android:fillColor="?btncolor"
+            android:strokeWidth="1"
+            android:pathData="M783 1286 c-25 -21 -28 -32 -31 -98 -5 -95 12 -132 66 -148 25 -8 204 -10 564 -8 l528 3 27 27 c23 24 28 38 31 96 4 75 -12 123 -47 142 -13 6 -210 10 -565 10 l-545 0 -28 -24z" />
+        <path
+            android:fillColor="?btncolor"
+            android:strokeWidth="1"
+            android:pathData="M309 624 c-21 -23 -24 -34 -24 -111 0 -80 1 -86 28 -109 25 -21 38 -24 110 -24 115 1 137 22 137 135 0 69 -17 118 -45 129 -9 3 -54 6 -99 6 -76 0 -84 -2 -107 -26z" />
+        <path
+            android:fillColor="?btncolor"
+            android:strokeWidth="1"
+            android:pathData="M775 618 c-25 -30 -27 -37 -23 -111 3 -72 6 -81 31 -103 l28 -24 549 0 549 0 28 24 c27 23 28 29 28 109 0 77 -3 88 -24 111 l-24 26 -558 0 -557 0 -27 -32z" />
+    </group>
+</vector>

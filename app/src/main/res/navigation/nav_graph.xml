@@ -41,7 +41,14 @@
         android:id="@+id/fragmentProfile"
         android:name="com.example.bus_app_e.fragments.FragmentProfile"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentMainMenu"
+            app:destination="@id/fragmentMainMenu" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentCreateTicket"
         android:name="com.example.bus_app_e.fragments.FragmentCreateTicket"

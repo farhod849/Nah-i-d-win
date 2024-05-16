@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="225.000000dp"
+    android:height="225.000000dp"
+    android:viewportWidth="225.000000"
+    android:viewportHeight="225.000000">
+
+    <group
+        android:translateY="225.000000"
+        android:scaleX="0.100000"
+        android:scaleY="-0.100000">
+        <path
+            android:fillColor="?btncolor"
+            android:strokeWidth="1"
+            android:pathData="M980 1967 c-19 -6 -44 -27 -57 -46 -23 -33 -23 -39 -23 -312 l0 -279 -286 0 -286 0 -34 -34 -34 -34 0 -166 0 -166 34 -38 34 -37 286 -3 285 -3 3 -284 3 -285 33 -32 32 -33 159 -3 c259 -5 251 -16 251 363 l0 275 269 0 c154 0 281 4 296 10 14 5 37 22 50 36 25 26 25 30 25 196 l0 170 -34 34 -34 34 -286 0 -286 0 0 285 0 285 -34 38 -34 37 -149 2 c-99 2 -159 -1 -183 -10z" />
+    </group>
+</vector>
