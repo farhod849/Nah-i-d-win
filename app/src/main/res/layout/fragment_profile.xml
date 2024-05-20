@@ -46,8 +46,15 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:weightSum="2"
-        >
+        android:weightSum="3">
+
+        <ImageButton
+            android:id="@+id/MapBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/map"/>
 
         <ImageButton
             android:id="@+id/TicketsBTN"

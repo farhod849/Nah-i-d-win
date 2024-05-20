@@ -41,6 +41,9 @@ class FragmentProfile : Fragment() {
             Toast.makeText(context,"Вы успешно вышли из аккаунта", Toast.LENGTH_SHORT).show();
             it.findNavController().navigate(R.id.action_fragmentProfile_to_fragmentLogin)
         }
+        binding.MapBtn.setOnClickListener{
+            it.findNavController().navigate(R.id.action_fragmentProfile_to_map_fragment)
+        }
     }
 }
 

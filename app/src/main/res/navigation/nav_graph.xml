@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_fragmentMainMenu_to_fragmentCreateTicket"
             app:destination="@id/fragmentCreateTicket" />
+        <action
+            android:id="@+id/action_fragmentMainMenu_to_map_fragment"
+            app:destination="@id/map_fragment" />
     </fragment>
     <fragment
         android:id="@+id/fragmentProfile"
@@ -48,10 +51,18 @@
         <action
             android:id="@+id/action_fragmentProfile_to_fragmentLogin"
             app:destination="@id/fragmentLogin" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_map_fragment"
+            app:destination="@id/map_fragment" />
     </fragment>
     <fragment
         android:id="@+id/fragmentCreateTicket"
         android:name="com.example.bus_app_e.fragments.FragmentCreateTicket"
         android:label="fragment_create_ticket"
         tools:layout="@layout/fragment_create_ticket" />
+    <fragment
+        android:id="@+id/map_fragment"
+        android:name="com.example.bus_app_e.fragments.map_fragment"
+        android:label="fragment_map_fragment"
+        tools:layout="@layout/fragment_map_fragment" />
 </navigation>

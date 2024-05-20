@@ -37,13 +37,15 @@ class FragmentMainMenu : Fragment() {
          {
              adapter.submitList(it)
          }
-          addticketbtn.setOnClickListener{
+          binding.addticketbtn.setOnClickListener{
               it.findNavController().navigate(R.id.action_fragmentMainMenu_to_fragmentCreateTicket)
           }
-            ProfileBTN.setOnClickListener{
+            binding.ProfileBTN.setOnClickListener{
                 it.findNavController().navigate(R.id.action_fragmentMainMenu_to_fragmentProfile)
             }
-
+            binding.MapBtn.setOnClickListener {
+                it.findNavController().navigate(R.id.action_fragmentMainMenu_to_map_fragment)
+            }
         }
     }
 }
