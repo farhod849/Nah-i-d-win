@@ -88,6 +88,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="60dp"
-        tools:src= "@drawable/mainmenulogo"/>
+        tools:background="@drawable/mainmenulogo"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

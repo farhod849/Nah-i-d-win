@@ -6,6 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.FragmentRegister">
     <EditText
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:id="@+id/TextUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,6 +26,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:id="@+id/TextEmail"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -31,6 +35,8 @@
         android:hint="E-mail" />
 
     <EditText
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:layout_marginTop="15dp"
         app:layout_constraintTop_toBottomOf="@id/TextUser"
         app:layout_constraintLeft_toLeftOf="parent"
