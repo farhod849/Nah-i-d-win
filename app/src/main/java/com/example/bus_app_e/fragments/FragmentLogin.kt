@@ -35,8 +35,7 @@ class FragmentLogin : Fragment() {
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(binding.TextEmail.getText().toString(), binding.TextPassword.getText().toString())
                     .addOnCompleteListener { task ->
                         if (task.isSuccessful) {
-                            it.findNavController().navigate(R.id.action_fragmentLogin_to_fragmentMainMenu)
-                            Toast.makeText(context,"Успешный вход", Toast.LENGTH_SHORT).show();
+                            it.findNavController().navigate(R.id.action_fragmentLogin_to_loading_Frag)
                         }
                         else
                         {
@@ -44,13 +43,7 @@ class FragmentLogin : Fragment() {
                         }
                     };
             }
-
         }
-
-
-
-
-
         binding.GoToRegActivity.setOnClickListener{
             it.findNavController().navigate(R.id.action_fragmentLogin_to_fragmentRegister)
         }

@@ -7,6 +7,16 @@
     tools:context=".fragments.FragmentRegister"
     android:background="@drawable/background_app"
     android:id="@+id/constraintreg">
+    <ImageView
+        android:id="@+id/BlueSquare"
+        android:scaleType="fitXY"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:src="@drawable/blue_square"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
     <EditText
         android:backgroundTint="@color/black"
         android:textColorHint="@color/black"
@@ -24,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@id/TextEmail" />
 
     <EditText
-        android:layout_marginBottom="300dp"
+        android:layout_marginBottom="200dp"
         android:backgroundTint="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
