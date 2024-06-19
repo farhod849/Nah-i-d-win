@@ -7,11 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
-import com.example.bus_app_e.R
 import com.example.bus_app_e.databinding.FragmentCreateTicketBinding
-import com.example.bus_app_e.databinding.FragmentMainMenuBinding
 import com.example.bus_app_e.misc.TicketViewModel
 
 
@@ -28,7 +25,7 @@ class FragmentCreateTicket : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.AddTicket.setOnClickListener{
-            ticketviewmodel.add(binding.NameTicket.text.toString(),binding.PriceTicket.text.toString().toDouble(),binding.DateTicket.text.toString())
+            ticketviewmodel.addTicket(binding.NameTicket.text.toString(),binding.PriceTicket.text.toString().toDouble(),binding.DateTicket.text.toString())
             binding.NameTicket.setText("")
             binding.PriceTicket.setText("")
             binding.DateTicket.setText("")

@@ -60,6 +60,7 @@
             android:id="@+id/addticketbtn"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:visibility="invisible"
             android:src="@drawable/addticket"
             android:scaleType="fitCenter"/>
     </LinearLayout>

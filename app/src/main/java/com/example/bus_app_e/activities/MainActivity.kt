@@ -15,6 +15,7 @@
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             MapKitFactory.setApiKey("327c16a3-434f-4ada-bcf6-9f380b92316e")
-            setContentView(R.layout.activity_main)
+            binding = ActivityMainBinding.inflate(layoutInflater)
+            setContentView(binding.root)
         }
     }

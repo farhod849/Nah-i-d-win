@@ -35,8 +35,9 @@ class FragmentMainMenu : Fragment() {
          recyclertickets.adapter = adapter
          ticketviewmodel.data.observe(viewLifecycleOwner)
          {
-             adapter.submitList(it)
+             adapter.submitList(it.listTicket)
          }
+            if(ticketviewmodel.getUser().isAdmin) addticketbtn.visibility = View.VISIBLE else addticketbtn.visibility = View.INVISIBLE
           binding.addticketbtn.setOnClickListener{
               it.findNavController().navigate(R.id.action_fragmentMainMenu_to_fragmentCreateTicket)
           }

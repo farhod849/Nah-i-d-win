@@ -13,7 +13,9 @@ import com.example.bus_app_e.databinding.FragmentMainMenuBinding
 import com.example.bus_app_e.databinding.FragmentProfileBinding
 import com.example.bus_app_e.misc.TicketAdapter
 import com.example.bus_app_e.misc.TicketViewModel
+import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
 
 
 class FragmentProfile : Fragment() {
@@ -31,8 +33,11 @@ class FragmentProfile : Fragment() {
         val adapter = TicketAdapter()
         binding.recycler1.adapter = adapter
         ticketviewmodel.data.observe(viewLifecycleOwner, {
-            adapter.submitList(it.filter {it.BuyedByMe})
+            adapter.submitList(it.listTicket.filter {it.BuyedByMe})
         })
+        binding.TextLogin.text = ticketviewmodel.getUser().email
+        binding.TextRole.text = if(ticketviewmodel.getUser().isAdmin) "Администратор" else "Пользователь"
+
         binding.TicketsBTN.setOnClickListener {
             it.findNavController().navigate(R.id.action_fragmentProfile_to_fragmentMainMenu)
         }
