@@ -14,30 +14,23 @@ import com.yandex.mapkit.mapview.MapView
 
 class map_fragment : Fragment() {
     private lateinit var binding: FragmentMapFragmentBinding
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
             MapKitFactory.initialize(context)
         binding = FragmentMapFragmentBinding.inflate(inflater, container, false)
-
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
         MapKitFactory.getInstance().onStart()
         binding.mapview.onStart()
-
     }
     override fun onStop() {
         binding.mapview.onStop()
         MapKitFactory.getInstance().onStop()
         super.onStop()
     }
-
 }

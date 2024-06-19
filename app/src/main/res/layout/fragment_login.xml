@@ -6,10 +6,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.FragmentLogin"
     android:background="@drawable/background_app"
-    >
+    android:id="@+id/constraintlogin">
 
     <Button
-
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/LoginBtn"
@@ -59,6 +58,7 @@
         android:text="Войти" />
 
     <TextView
+        android:textColor="@color/black"
         android:layout_marginRight="80dp"
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -88,6 +88,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="60dp"
-        tools:background="@drawable/mainmenulogo"/>
+        android:background="@drawable/mainmenulogo"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
